@@ -7,7 +7,9 @@ flask run --host=192.168.0.3
 
 http://10.0.0.10:5000/
 
-
+# for Tensorflow docker env
+RUN apt-get update
+RUN apt-get install ffmpeg libsm6 libxext6  -y
 
 
 
