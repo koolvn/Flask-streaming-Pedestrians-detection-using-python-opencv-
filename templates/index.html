@@ -1,9 +1,17 @@
-<html>
-  <head>
+<html lang="ru">
+<head>
     <title>Abandoned object detection</title>
-  </head>
-  <body>
-    <h1>Abandoned object detection</h1>
-    <img src="{{ url_for('video_feed') }}">
-  </body>
+</head>
+<body>
+<h3>LiveStream 1, 2</h3>
+<p>
+    <img src="{{ url_for('video_feed_1') }}" alt="Feed 1" width="640" height="384">
+    <img src="{{ url_for('video_feed_2') }}" alt="Feed 2" width="640" height="384">
+</p>
+<h3>LiveStream 3, 4</h3>
+<p>
+    <img src="{{ url_for('video_feed_3') }}" alt="Feed 3" width="640" height="384">
+    <img src="{{ url_for('video_feed_4') }}" alt="Feed 4" width="640" height="384">
+</p>
+</body>
 </html>
