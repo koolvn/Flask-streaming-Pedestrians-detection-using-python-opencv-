@@ -18,7 +18,7 @@ def infer_model(img, threshold=0.5):
     mask = np.concatenate([mask * 0.2, mask * 0.99, mask * 0], axis=2)
     img = np.clip((img + mask), 0, 1)
     img = (img * 255).astype(np.uint8)
-    print('Inference time:', time.time() - _t0)
+    print(f'Inference time: {time.time() - _t0: .4}')
     return img, mask
 
 
