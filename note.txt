@@ -3,7 +3,7 @@ flask run --host=0.0.0.0
 
 
 set FLASK_APP=stream_video.py
-flask run --host=10.0.0.10
+flask run --host=192.168.0.3
 
 http://10.0.0.10:5000/
 
